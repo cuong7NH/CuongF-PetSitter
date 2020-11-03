@@ -1,0 +1,84 @@
+
+
+
+$greenColor : #a6ce39;
+html {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+body {
+    background-color: #fafafa;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    line-height: 1.2em;
+    // margin: 0 0 1em 0;
+    color: #454545;
+
+}
+// .container {
+    
+// }
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+@import 'mixin';
+@import 'header';
+@import 'main';
+@import  'footer';
+@import 'services';
+@import 'button';
+@import 'about';
+@import 'shortcodes';
+@import 'faqs';
+@import 'page-404';
+@import 'coming-soon';
+@import 'portfolio';
+@import 'contact';
+@import 'job-list';
+@import 'team-member';
+@import 'page-full-width';
+@import 'left-sidebar';
+@import 'typography';
+@import 'columns';
+@import 'pricing-tables';
+@import 'job-post-profile';
+@import 'job-dashboard';
+@import 'job-profile';
+@import 'blog';
+@import 'blog-post';
+@import 'login';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

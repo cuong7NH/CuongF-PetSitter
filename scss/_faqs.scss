@@ -1,0 +1,25 @@
+
+
+.main-faqs {
+    padding: 64px 0;
+    background-color: #fafafa;
+
+    .main-faqs__contact {
+        padding: 40px 30px;
+        background-color: #fff;
+        border: 1px solid #ebebeb;
+        h2 {    
+            font-size: 24px;
+            text-align: center;
+            line-height: 24px;
+            margin-bottom: 6px;
+        }
+        p {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .main-faqs__contact--btn {
+            text-align: center;
+        }
+    }
+}

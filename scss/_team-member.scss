@@ -1,0 +1,93 @@
+
+
+.main-team-member {
+    padding: 64px 0;
+    .main-team-member__me {
+        .main-team-member__me--img {
+            padding: 6px;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #ebebeb;
+            @media screen and (max-width: 992px) {
+                max-width: 482px;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+            img {
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+        .main-team-member__me--info {
+            h2 {
+                font-size: 24px;
+                // margin-bottom: ;
+                line-height: 36px;
+                margin-bottom: 10px;
+                small {
+                    color: #bfbfbf;
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: 300;
+                }
+            }
+            h5 {
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+            p {
+                margin-bottom: 1.5em;
+            }
+            ul {
+                
+                li {
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                   
+                    span {
+                        display: inline-block;
+                        min-width: 90px;
+                        color: #454545;
+                    }
+                    a  {
+                        color: $greenColor;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-team-member__my-skill {
+        h3 {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        .main-team-member__my-skill--box {
+            ul {
+                li {
+                    margin-top: 32px;
+                    // margin-bottom: 30px;
+                    position: relative;
+                    margin-bottom: 40px;
+                    h6 {
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                        top: -30px;
+                        line-height: 30px;
+                        // background-color: red;
+                        padding-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .main-team-member__our-team {
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}

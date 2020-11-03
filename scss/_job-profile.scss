@@ -1,0 +1,263 @@
+
+.main-job-profile {
+    padding: 64px 0;
+
+    .main-job-profile__content  {
+
+        .main-job-profile__content--info {
+            .avatar {
+                padding: 6px;
+                border-radius: 6px;
+                background-color: #fff;
+                border: 1px solid #ebebeb;
+                max-width: 320px;
+                @media screen and (max-width: 992px) {
+                    margin: auto;
+                    margin-bottom: 30px;
+                    
+                }
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+            .avatar-info  {
+
+
+                .avatar-info__name {
+                    margin-bottom: 15px;
+                    h3 {
+                        font-size: 24px;
+                        line-height: 1.2em;
+
+                    }
+                    p {
+                        font-style: italic;
+                    }
+
+                }
+
+                .avatar-info__meta {
+                    margin-bottom: 15px;
+                    span  {
+                        display: inline-block;
+                        line-height: 24px;
+
+                    }
+
+                    span.have-dot {
+                        margin-left: 24px;
+                        position: relative;
+                        &::before {
+                            position: absolute;
+                            content: '.';
+                            font-size: 45px;
+                            left: -17px;
+                            top: -15px;
+                        }
+                    }
+                }
+                .avatar-info__location {
+                    margin-bottom: 50px;
+                    li {
+                        line-height: 24px;
+                        position: relative;
+                        padding-left: 30px;
+                        i {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        p {
+                            a {
+                                color: $greenColor;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+                .avatar-info__btn {
+                    a {
+                        i {
+                            font-size: 150%;
+                            margin-right: 6px;
+                            transform: translateY(5px);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .main-job-profile__content--description {
+            margin-top: 60px;
+            h3  {
+                font-size: 18px;
+                margin-bottom: 1em;
+            }
+            p.mb {
+                margin-bottom: 21px;
+               
+            }
+        }
+
+        .main-job-profile__content--location {
+            h3 {
+                font-size: 18px;
+                margin-bottom: 1em;
+            }
+            .map {
+                width: 100%;
+                background-color: #fff;
+                min-height: 300px;
+                padding: 6px;
+                border-radius: 6px;
+                .map__item {
+                    background-color: #E5E3DF;
+                    width: 100%;
+                    height: 300px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .main-job-profile__content--list {
+            h3 {
+                font-size: 18px;
+                margin-bottom: 1em;
+            }
+            ul  {
+                margin-bottom: 20px;
+                li {
+                    line-height: 32px;
+                    i {
+                        transform: translateY(2px);
+                        margin-right: 5px;
+                        font-size: 120%;
+                        color:$greenColor;
+                    }
+                    span {
+                        font-weight: 500;
+                        position: relative;
+                        p {
+                            display: inline-block;
+                            padding-left: 20px;
+                           
+                        }
+                        .date {
+                            padding-left: 20px;
+                            position: absolute;
+                            left: 0px;
+                            i {
+                                color: #8c8c8c;
+                            }
+                            small {
+                                position: relative;
+                                &::before {
+                                    content: '\00BB';
+                                    position: absolute;
+                                    left: -45px;
+                                    top: -45px;
+                                    color: $greenColor;
+                                    font-size: 200%;
+
+                                }
+                            }
+                            p {
+                                padding: 0;
+                                display: block;
+                                line-height: 20px;
+                                margin-top: -5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+    .main-job-profile__bar-right {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 110%;
+            background-color: #ebebeb;
+            left: -60px;
+            top: -10px;
+        }
+        .project__bar-right--title {
+            border-bottom: 1px solid #ebebeb;
+            h3 {
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 20px;
+                padding: 0 5px;
+            }
+            
+        }
+        ul.project__bar-right--list {
+            li {
+                border-bottom: 1px solid #ebebeb;
+
+                a {
+                    &:hover {
+                        background-color: #fff;
+                    }
+                    display: block;
+                    padding: 15px 5px;
+
+                    h4 {
+                        font-size: 14px;
+                        line-height: 16px;
+                        font-weight: 500;
+
+                    }
+
+                    p {
+                        font-size: 12px;
+                        color: #919191;
+                        font-weight: 500;
+                        line-height: 24px;
+                        span {
+                           line-height: 24px;
+                           display: inline-block;
+                        }
+
+                        span.have-dots {
+                            margin: 0 25px;
+                            position: relative;
+                            &::before {
+                                content: '.';
+                                position: absolute;
+                                font-size: 30px;
+                                top: -8px;
+                                left: -16px;
+                            }
+                            &::after {
+                                content: '.';
+                                position: absolute;
+                                font-size: 30px;
+                                top: -8px;
+                                right: -16px;
+                            }
+                        }
+
+                        span.green {
+                            color: $greenColor;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

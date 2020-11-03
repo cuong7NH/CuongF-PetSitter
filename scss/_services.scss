@@ -1,0 +1,272 @@
+
+
+
+// SERVICES CSS
+
+
+// Page heading start css
+.page-heading {
+    padding: 33px 0;
+    background-image: url('../img/bg/bg1.jpg') ;
+    background-size: cover;
+    background-position:  cover;
+    background-attachment: fixed;
+    .page-heading__left {
+        h1 {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            @media screen and (max-width: 992px) {
+                text-align: center;
+                margin-bottom: 10px;
+                
+            }
+        }
+    }
+
+    .page-heading__right {
+        ul {
+            text-align: end;
+            text-transform: uppercase;
+            @media screen and (max-width: 992px) {
+                text-align: center;
+            }
+            li {
+                color: #fff;
+                display: inline-block;
+                font-size: 12px;
+                a {
+                    color: #fff;
+                    &:hover {
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+            li.active {
+                color: #454545;
+            }
+            li.gach-cheo {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+// Page heading end css
+
+
+
+
+
+// services information CSS start
+
+.main-services__services-info , .info-page {
+    padding: 64px 0;
+    .services-info__img-left {
+        padding: 6px;
+        border-radius: 6px;
+        border: 1px solid #ebebeb;
+        background-color: #fff;
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        @media screen and (max-width: 992px) {
+            margin-bottom: 20px;
+        }
+    }
+    .services-info__text-right {
+        p {
+            margin-bottom: 21px;
+        }
+        ul {
+            li {
+                margin-bottom: 8px;
+                i {
+                    color: $greenColor;
+                    font-size: 110%;
+                    padding-right: 10px;
+                    transform: translateY(2px);
+                }
+            }
+        }
+    }
+}
+// services information CSS end
+.main-services {
+    background-color: #fafafa;
+
+
+
+
+    //  Services Choose us Start CSS
+    .main-services__choose-us {
+        padding: 20px 0 64px;
+        .choose-us_main {
+            .choose-us__main--item {
+
+            }
+
+        }
+        .services-spacer {
+            width: 100%;
+            height: 50px;
+            @media screen and (max-width: 992px){
+                height: 0;
+            }
+        }
+    }
+
+
+    //  Servicer Choose us end CSS
+
+
+
+    //  Services Pricing Start CSS
+    .main-services__pricing {
+        background-color: #f3f3f3;
+        padding: 64px;
+        .services__pricing--main {
+            .pricing-main__item {
+                @media screen and (max-width: 992px) {
+                    margin: 15px 0;
+                }
+                border: 1px solid #ebebeb;
+                text-align: center;
+                background-color: #fff;
+                border-radius: 8px;
+                overflow: hidden;
+                .pricing-main__item--head {
+                    h3 {
+                        font-size: 20px;
+                        line-height: 64px;
+                    }
+                    h3.pricing-main__item--head-white{
+                        background-color: #fff;
+                        color: #2f2f2f;
+
+                    }
+                    h3.pricing-main__item--head-green {
+                        background-color: $greenColor;
+                        color: #fff;
+                    }
+                    .pricing-head__price--white {
+                        background-color: #fff;
+                        color: #2f2f2f;
+                    }
+                    .pricing-head__price--green {
+                        background-color: $greenColor;
+                        color: #fff;
+
+                    }
+                    .pricing-head__price {
+                        padding: 15px 10px;
+                        span {
+                            position: relative;
+                            display: inline-block;
+                            font-size: 32px;
+                            padding-left: -20px;
+                            sup {
+                                font-size: 18px;
+                                position: absolute;
+                                top: -4px;
+                                vertical-align: top;
+                                left: -12px;
+                            }
+                        }
+                        small {
+
+                        }
+                    }
+                }
+                .pricing-main__item--body {
+                    ul {
+                        li {
+                            padding: 10px;
+                        }
+                        
+                    }
+                    ul.pricing-main__item--body-white {
+                        li {
+
+                        }
+                        li:nth-child(even) {
+                            background-color: #fff;
+                        }
+                        li:nth-child(odd) {
+                            background-color: #f7f7f7;
+                        }
+                    }
+                    ul.pricing-main__item--body-green {
+                        li {
+                            color:#fff;
+                        }
+                        li:nth-child(even) {
+                            background-color: $greenColor;
+                        }
+                        li:nth-child(odd) {
+                            background-color: #95B933;
+                        }
+                    }
+                }
+                .pricing-main__item--footer {
+                    padding: 30px 10px;
+                }
+                .pricing-main__item--footer-white {
+                    background-color: #fff;
+                }
+                .pricing-main__item--footer-green {
+                    background-color: $greenColor;
+                }
+            }
+        }
+
+        
+    }
+
+
+    //  Services Pricing end CSS
+
+
+    // services client CSS start
+    .main-services__services-client {
+        padding: 64px;
+        border-top: 1px solid #ebebeb;
+        // clien say end
+        .services-client__our-client{
+
+            .services-client__our-client--logo {
+
+                .our-client--logo-item {
+                    border: 1px solid transparent;
+                    padding: 5px;
+                    border-radius: 6px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    &:hover {
+                        border-color: #ebebeb;
+                        background-color: #fff;
+                    }
+
+                    img {
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                }
+                .spacer {
+                    width: 100%;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+
+    // services client CSS end
+
+}
+
+
+
+
+

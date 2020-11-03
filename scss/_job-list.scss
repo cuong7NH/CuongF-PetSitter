@@ -1,0 +1,173 @@
+
+
+.form-select {
+    padding: 12px 18px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    height: 46px;
+    outline: none;
+    color: #8c8c8c;
+    appearance: none;
+    position: relative;
+    
+    
+}
+.main-job-list {
+    padding: 64px 0;
+    background-color: #fafafa;
+    .job-list__filter {
+        border-top-left-radius: 6px ;
+        border-top-right-radius: 6px ;
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        padding: 30px 30px;
+        background-color: #ebebeb;
+        display: flex;
+        flex-wrap: nowrap;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        
+        .job-list__filter--input {
+            flex-grow: 2;
+            position: relative;
+            div {
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 20px;
+                }
+            }
+            
+            .select-icon {
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
+           
+        }
+        .job-list__filter--btn {
+            padding-left: 30px;
+            flex: 0 0 150px;
+            max-width: 150px;
+            @media screen and (max-width: 768px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding-left: 0;
+                margin-top: -20px;
+            }
+            
+        }   
+    }
+    .job-list__ul {
+
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-bottom-left-radius: 6px ;
+        border-bottom-right-radius: 6px ;
+        overflow: hidden;
+        li.active {
+            background-color:#ffc74d;
+            p {
+                color: #fff;
+            }
+            i {
+                color: #fff !important;
+            }
+            &:hover {
+                background-color: #FFB71A;
+            }
+        }
+        li {
+            cursor: pointer;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            transition: 0.2s;
+            &:hover  {
+                background-color: #fafafa;
+            }
+            .job-list__ul--info {
+                position: relative;
+                padding-left: 80px;
+                
+                .img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 64px;
+                    width: 64px;
+                    padding: 2px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    border: solid 1px #ececec;
+                    img {
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .job-list__ul--info-name {
+                    padding: 11px 0;
+                    height: 64px;
+                    // position: absolute;
+                    h3 {
+                        // font-size: 20px;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                    p {
+                        font-style: italic;
+                    }
+                }
+                
+            }
+            .job-list__ul--location {
+                position: relative;
+                padding-left: 20px;
+                @media screen  and (max-width: 768px) {
+                    text-align: start;
+                    padding-left: 100px;
+
+                }
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: $greenColor;
+                    @media screen  and (max-width: 768px) {
+                        left: 80px;
+    
+                    }
+                }
+                p {
+                    line-height:64px;
+                    @media screen  and (max-width: 768px) {
+                        line-height: 30px;
+    
+                    }
+                }
+            }
+            .job-list__ul--time {
+                text-align: end;
+                @media screen  and (max-width: 768px) {
+                    text-align: start;
+                    padding-left: 80px;
+
+                }
+                    
+                p {
+                    line-height: 64px;
+                    @media screen  and (max-width: 768px) {
+                        line-height: 30px;
+    
+                    }
+                }
+            }
+
+        
+        }
+    }
+}

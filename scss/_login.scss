@@ -1,0 +1,53 @@
+
+
+.login-container {
+    padding: 64px;
+
+    .box {
+        padding: 40px 30px;
+        border: 1px solid #ebebeb;
+        background-color: #fff;
+        h3 {
+            font-size: 20px;
+            margin-bottom: 1em;
+        }
+
+        form {
+            label {
+                margin-bottom: 5px;
+                display: inline-block;
+                color: #454545;
+                font-weight: normal;
+                line-height: 24px;
+                span {
+                    color:red;
+                }
+            }
+            input {
+                margin-bottom: 20px;
+            }
+            #remember {
+                margin: 0 5px 0 15px;
+            }
+            a.lost-pass {
+                float: right;
+                color: $greenColor;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .box__login {
+        @media screen and (max-width: 992px) {
+            margin-bottom: 30px;
+            
+        }
+
+    }
+
+    .box__register {
+
+    }
+}

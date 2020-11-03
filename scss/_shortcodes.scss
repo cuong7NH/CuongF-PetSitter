@@ -1,0 +1,486 @@
+
+
+.main-short-codes {
+    padding: 64px 0;
+}
+
+.accordion__item {
+    .panel {
+        margin-bottom: 30px;
+        .panel-title {
+            transition: 0.3s;
+            a {
+                color: #6d6d6d;
+                display: block;
+                font-weight: 300;
+                // padding: 14px 20px 14px 70px;
+                border: 1px solid #ebebeb;
+                position: relative;
+                font-weight: 400;
+                // line-height: 18px;
+                overflow: hidden;
+                background-color: #fff;
+                &:before {
+                    content: '+';
+                    position: absolute;
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 46px;
+                    text-align: center;
+                    width: 45.8px;
+                    height: 45.8px;
+                    background-color: #fff;
+                    border-right: 1px solid #ebebeb;
+                    color: #6d6d6d;
+                    // top: 0;
+                    // left: 0;
+
+
+                }
+            }
+
+            &:hover {
+                a {
+                    background-color: #ececec;
+
+                }
+            }
+            
+            
+        }
+        .panel-title-1 {
+            a  {
+                padding: 14px 20px 14px 70px;
+
+                &::before {
+                    top: 0 ;
+                    left: 0;
+                }
+            }
+        }
+
+        .panel-title-2 {
+            a
+             
+             {
+                padding: 14px 20px 14px 20px;
+
+                &::before {
+                    top: 0 ;
+                    right: 0;
+                }
+            }
+        }
+
+        .acc1-active  {
+            a {
+                &::before {
+                    content: '-';
+                    background-color: $greenColor;
+                    color: #fff;
+                }
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+            
+        }
+        .acc2-active  {
+            a {
+                background-color: $greenColor;
+                color: #fff;
+                &::before {
+                    content: '-';
+                    background-color: $greenColor;
+                    color: #fff;
+                }
+                &:hover {
+                    background-color: $greenColor;
+                }
+            }
+            
+        }
+
+       
+
+        .panel-body  {
+            // padding: 20px 28px;
+            background-color: #fff;
+            border: 1px solid #ebebeb;
+            border-top: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.2s ease-out;
+            p {
+                padding: 20px 28px;
+            }
+        }
+       
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+hr {
+    margin: 60px 0;
+    border-top-color: #ebebeb;
+    border: 0;
+    border-top: 1px solid #eee;
+    height: 0;
+}
+
+hr.md {
+    display: none;
+    width: 100%;
+    @media screen and (max-width: 992px) {
+        display: block;
+    }
+}
+
+// Buttons 
+
+.short-codes__btn {
+    .btn-lg-row {
+        margin-bottom: 20px;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 0px;
+        }
+    }
+}
+.spacer-btn {
+    height: 20px;
+    width: 100%;
+    display: none;
+    @media screen and ( max-width: 992px ){
+        display: block;
+        
+    }
+}
+
+
+// Tabs 
+
+.short-codes__tabs {
+    .tabs {
+        .tabs__nav {
+            ul {
+                transform: translateY(1px);
+                li {
+                    cursor: pointer;
+                    display: inline-block;
+                    padding: 12px 20px;
+                    border: 1px solid #f7f7f7;
+                    background-color: #f2f2f2;
+                    border-bottom: none !important;
+                    position: relative;
+                    transition: 0.3s;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $greenColor;
+                        top: -1px;
+                        left: -1px;
+                        opacity: 0;
+                    }
+                    i {
+                        transform: translateY(2px);
+                        margin-right: 5px;
+                    }
+                }
+                li.tabs__nav--active {
+                    background-color: #fff;
+                    color: $greenColor;
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .tabs__content {
+            background-color: #fff;
+            .tabs__content--item {
+                display: none;
+                padding: 30px 28px;
+                border: 1px solid #f7f7f7;
+                animation: fadeEffect 1s;
+            }
+          
+            .tabs__content--active {
+                display: block;
+            }
+        }
+    }
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+// Call To Action Start 
+
+.call-to-action {
+    padding: 40px 30px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    .call-to-action__text {
+        margin-bottom: 24px;
+        p {
+            font-weight: 300;
+            color: #8c8c8c;
+        }
+        h3 {
+            font-size: 24px;
+            color: #454545;
+            margin-bottom: 6px;
+        }
+    }
+    .call-to-action__btn {
+        min-width: 130px;
+    }
+}
+.call-to-action__left {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    @media screen  and (max-width: 992px){
+        display: inherit;
+        text-align: center;
+    }
+
+}
+.call-to-action__center {
+    text-align: center;
+
+ }
+
+
+
+
+
+// Call to action End
+
+
+
+// testis Slider
+
+.short-codes__testi-slider {
+    .owl-carousel-testi {
+        position: relative;
+
+        &:hover {
+
+            .owl-nav {
+                button {
+                    opacity: 1;
+                }
+            }
+            
+        }
+        .item {
+            // background-color: green;
+            padding: 0 10px;
+        }
+
+        .owl-nav {
+            button {
+                position: absolute;
+                top: calc(50% - 20px);
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                background-color: $greenColor;
+                opacity: 0;
+                transition: 0.3s;
+
+                span {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                &:hover {
+                    background: #454545;
+                }
+            }
+            button.owl-next {
+                right: -30px;
+            }
+            button.owl-prev {
+                left: -30px;
+            }
+        }
+    } 
+    }
+    
+
+
+
+//   Alert box start
+.alert-box__item {
+    padding: 20px 28px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    p {
+        strong {
+          margin-right: 4px;
+        }
+      }
+      .alert-item__btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border:none;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        i {
+            line-height: 16px;
+            font-weight: 900;
+            color: #fff;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+          
+      }
+  }
+
+.alert-box__item--danger {
+    color: #bb3737;
+    background-color: #fff5f5;
+    border-color:#f8e6e6 ;
+    .alert-item__btn-close  {
+        background-color: #e1b5b5 ;
+    }
+  }
+.alert-box__item--info {
+    color: #3d94e6;
+    background-color: #dfeffe;
+    border-color:#b1d5f6 ;
+    .alert-item__btn-close  {
+        background-color: #b1d5f6 ;
+    }
+  }
+.alert-box__item--warning {
+    color: #d2b715;
+    background-color: #faf8e8;
+    border-color:#f3eab2 ;
+    .alert-item__btn-close  {
+        background-color: #eada77 ;
+    }
+  }
+
+.alert-box__item--success  {
+    color: #55b155;
+    background-color: #e4fbe4;
+    border-color:#bfe3bf ;
+    .alert-item__btn-close  {
+        background-color: #bfe3bf ;
+    }
+  }
+
+//   Alert box End
+
+
+
+// Modals start
+
+.short-codes__modals {
+    .modal__item {
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+// Modals End
+
+// TABLE Start
+
+
+.short-codes__table--item, .dashboard-table {
+    table {
+        border: 1px solid #ebebeb;
+        width: 100%;
+        max-width: 100%;
+        
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        thead {
+            background-color: $greenColor;
+            tr {
+                th {
+                    padding: 14px;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #fff;
+                    border: 1px solid #ebebeb;
+
+                    border-top: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background-color: #f7f7f7;
+                }
+                td {
+                    padding: 14px;
+                    border: 1px solid #ebebeb;
+                }
+            }
+
+        }
+    }
+}
+
+
+// TABLE End
+
+
+// blockquote 
+
+.blockquote-box {
+    background-color: #f0f0f0;
+    padding: 26px 26px 26px 70px;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.08);
+    border-left: 4px solid $greenColor;
+    i {
+        position: absolute;
+        top: 13px;
+        left: 35px;
+        transform: translateX(-50%);
+        font-size: 250%;
+        color: #e0e0e0;
+        color: $greenColor;
+
+    }
+    p {
+        font-style: italic;
+      
+    }
+}
+
+
+// blockquote end
